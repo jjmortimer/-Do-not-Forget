@@ -1,0 +1,9 @@
+#todos {
+  padding: 20px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.todo {
+  padding: 5px;
+}
