@@ -1,3 +1,7 @@
+html{
+  font-family:"Open Sans";
+}
+
 #todos {
   padding: 20px;
   border: 1px ;
