@@ -1,7 +1,8 @@
 #todos {
   padding: 20px;
-  border: 1px solid black;
+  border: 1px ;
   margin-top: 10px;
+  background: #3b3e5b;
 }
 
 .todo {
@@ -9,5 +10,6 @@
 }
 
 body{
-  background-color: cyan;
+  background-color: #2e304f;
+  color: white;
 }
