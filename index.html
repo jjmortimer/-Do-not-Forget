@@ -1,0 +1,69 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="cssfile.css">
+
+<title>Don't Forget</title>
+</head>
+
+<body>
+<nav>
+<view>
+</nav>
+<main>
+    <h1>Don't Forget</h1>
+    <section>
+      <form action="/hey">
+        <div>
+        <label for="time"> Enter the time you would like be reminded</label>
+      <input type="date" id="date"><br>
+      <label for="date"> Enter the date you would like be reminded</label>
+      <input type="time" id=time>
+        </div>
+          <span onclick="newElement()" class="addBtn">Add</span>
+      <input type="text">  <br>
+
+
+      <button>Create a Reminder</button>
+      </form>
+    </section>
+
+</main>
+<footer>
+    <nav>
+
+    </nav>
+</footer>
+<script>
+
+  function newElement() {
+      var li = document.createElement("li");
+      var inputValue = document.getElementById("myInput").value;
+      var t = document.createTextNode(inputValue);
+      li.appendChild(t);
+      if (inputValue === '') {
+          alert("You must write something!");
+      } else {
+          document.getElementById("myUL").appendChild(li);
+      }
+      document.getElementById("myInput").value = "";
+
+      var span = document.createElement("SPAN");
+      var txt = document.createTextNode("\u00D7");
+      span.className = "close";
+      span.appendChild(txt);
+      li.appendChild(span);
+
+      for (i = 0; i < close.length; i++) {
+          close[i].onclick = function () {
+              var div = this.parentElement;
+              div.style.display = "none";
+          }
+      }
+  }
+
+</script>
+
+
+</body>
+
+</html>
