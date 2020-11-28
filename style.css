@@ -35,7 +35,9 @@ input::placeholder {
   color: #68688d;
 }
 
-
+#input{
+  margin-top: 10px;
+}
 button {
   margin-top: 10px;
   border-radius: 50px;
