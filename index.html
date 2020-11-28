@@ -2,14 +2,13 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <title>Don't Forget</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/style.css">
     <script src="/main.js"></script>
@@ -18,15 +17,19 @@
 
   <body>
 
-    <h1>Don't Forget</h1>
+    <div class="wrapper">
 
-    <input type="text" id="todo1" value="">
+      <h1>Don't Forget</h1>
 
-    <button id="my-button" class="addBtn">Create a Reminder</button>
+      <input type="text" id="input" value="" placeholder="Enter todo list item...">
 
-    <div id="todos">
+      <button id="my-button" class="addBtn">Create a Reminder</button>
+      <div class="clearfix"></div>
+
+      <div id="todos">
+      </div>
+
     </div>
-
   </body>
 
 </html>

@@ -1,19 +1,69 @@
-html{
-  font-family:"Open Sans";
+html {
+  font-family: "Open Sans";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #2e304f;
+  color: white;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 300px;
+  margin: auto;
+}
+
+input {
+  background: #3b3e5b;
+  border: none;
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: white;
+  outline: none !important;
+}
+
+input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #68688d;
+}
+
+
+button {
+  margin-top: 10px;
+  border-radius: 50px;
+  float: right;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #4e7588;
+  color: white;
+  cursor: pointer;
 }
 
 #todos {
-  padding: 20px;
-  border: 1px ;
-  margin-top: 10px;
+  padding: 0px 0px;
   background: #3b3e5b;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
 .todo {
-  padding: 5px;
+  padding: 10px;
+  border-bottom: 1px solid #272a45;
+  cursor: pointer;
 }
 
-body{
-  background-color: #2e304f;
-  color: white;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
