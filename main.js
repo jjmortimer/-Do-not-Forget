@@ -8,16 +8,13 @@ function addToDo() {
   localStorage.setItem('todos', JSON.stringify(todos));
 }
 
-$("#my-button").bind("click", addToDo);
-
-
-
 $(document).ready(function() {
+    $("#my-button").bind("click", addToDo);
   var todos = localStorage.getItem('todos');
-  if (!todos) return;
-	todos = JSON.parse(todos);
+    todos = JSON.parse(todos);
 
   for (i = 0; i < todos.length; i++) {
     $("#todos").append('<div class="todo">' + todos[i] + '</div>');
   }
+
 });
